@@ -4,3 +4,5 @@ mod node;
 
 pub use edge::DefaultEdgeShape;
 pub use node::DefaultNodeShape;
+
+mod gvizor_edge;
