@@ -187,7 +187,7 @@ impl<N: Clone, E: Clone + Numeric, Ty: EdgeType, Ix: IndexType, D: DisplayNode<N
     }
 
     fn update(&mut self, state: &EdgeProps<E>) {
-        self.default.update(state)
+        <DefaultEdgeShape as DisplayEdge<N, E, Ty, Ix, D>>::update(&mut self.default, state)
     }
 }
 
